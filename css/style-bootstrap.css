@@ -17,8 +17,8 @@ body {
 }
 
 .navbar-toggle {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0px 15px 9px;
+  border: none;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -48,10 +48,6 @@ body {
   color: #E30513;
 }
 
-.navbar-toggle {
-  border: none;
-}
-
 .navbar-collapse {
   border-top: none;
   box-shadow: none;
@@ -67,6 +63,26 @@ body {
   text-align: center;
 }
 
-#work {
+#work-welcome {
   background-color: #C9F0ED;
+}
+
+#work {
+  text-align: center;
+}
+
+#work h3 {
+  margin-top: 50px;
+}
+
+#work .description {
+  margin-bottom: 20px;
+}
+
+#work hr {
+  border-top-color: #E30613;
+}
+
+.bx-wrapper img {
+  margin: 0 auto;
 }
