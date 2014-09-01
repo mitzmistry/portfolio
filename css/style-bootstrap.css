@@ -101,3 +101,15 @@ footer {
   padding: 160px 0;
   font-size: 18px;
 }
+
+
+/*************** ABOUT ***************/
+
+#about {
+  color: #5E5E5E;
+  padding-top: 100px;
+}
+
+#about-hey {
+  font-size: 72px;
+}
