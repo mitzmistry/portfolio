@@ -2,28 +2,30 @@
 
     "use strict";
 
-    var numberOfSliders = 7;
+    $(".bxslider").bxSlider({
+        controls: false
+    });
 
-    for (var i = 1; i <= numberOfSliders; i++) {
-        var sliderSelector = '#project-' + i + '-slider'
-          , nextSelector = '#slider-' + i + '-next'
-          , prevSelector = '#slider-' + i + '-prev';
+    var toggleWorkWelcome = function() {
+        var $this = $(this);
+        var $currentlyHidden = $this.find(".hidden");
+        var $notHidden = $currentlyHidden.siblings();
 
-        $(sliderSelector).bxSlider({
-          mode: 'fade',
-          nextSelector: nextSelector,
-          prevSelector: prevSelector,
-          nextText: '>',
-          prevText: '<'
-        });
-    }
-
-    // resize the title div to begin with and on any resize
-    var resizeTitleDiv = function() {
-      $("#welcome").height($(window).height());
+        $currentlyHidden.removeClass("hidden");
+        $notHidden.addClass("hidden");
     };
 
+    var scrollToWork = function() {
+        $.scrollTo($("#work"), {
+            // allow for the header height
+            offset: -62,
+            duration: 300
+        });
+    };
 
-    resizeTitleDiv();
-    $(window).on("resize", resizeTitleDiv);
-})()
+    $("#work-welcome")
+        .on("mouseenter", toggleWorkWelcome)
+        .on("mouseleave", toggleWorkWelcome)
+        .on("click", scrollToWork);
+
+})();
