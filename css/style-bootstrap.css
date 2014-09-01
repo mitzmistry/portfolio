@@ -1,0 +1,72 @@
+body {
+    padding-top: 62px;
+}
+
+.navbar-fixed-top {
+  border-width: 0px;
+  background-color: #C9F0ED;
+}
+
+.navbar,
+.navbar-header {
+  min-height: 62px;
+}
+
+.navbar-brand {
+  padding: 10px;
+}
+
+.navbar-toggle {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-nav > li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  line-height: 32px;
+}
+
+.nav > li > a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #5E5E5E;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #E30513;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar-collapse {
+  border-top: none;
+  box-shadow: none;
+}
+
+.navbar-collapse.collapsing,
+.navbar-collapse.collapse.in {
+  background-color: #fff;
+}
+
+.navbar-collapse.collapsing .navbar-nav li,
+.navbar-collapse.collapse.in .navbar-nav li {
+  text-align: center;
+}
+
+#work {
+  background-color: #C9F0ED;
+}
